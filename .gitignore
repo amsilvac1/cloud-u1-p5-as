@@ -1,5 +1,30 @@
-﻿.terraform/
+﻿
+# Directorio de proveedores de Terraform
+.terraform/
+
+# Archivos de estado
 *.tfstate
+*.tfstate.*
 *.tfstate.backup
-.terraform.lock.hcl
+
+# Archivos de planificación
+*.tfplan
 tfplan
+
+# Variables que pueden contener credenciales
+*.tfvars
+*.tfvars.json
+
+# Archivos de configuración local
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Archivos de registro
+crash.log
+crash.*.log
+
+# Archivos temporales
+*.tmp
+*.bak
